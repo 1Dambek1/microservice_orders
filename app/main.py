@@ -11,7 +11,7 @@ from pydantic import BaseModel, Field
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 DB_PATH = BASE_DIR / "orders.db"
-USERS_SERVICE_URL = os.getenv("USERS_SERVICE_URL", "http://127.0.0.1:8001")
+USERS_SERVICE_URL = os.getenv("USERS_SERVICE_URL", "http://45.157.163.161:8000")
 HTTP_CLIENT = httpx.AsyncClient(timeout=10.0, trust_env=False)
 
 
